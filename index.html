@@ -34,13 +34,13 @@
         .button-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px 40px; /* Increases space between rows and columns */
+            gap: 40px 50px; /* Further increases space between rows and columns */
             justify-items: center;
         }
 
         .centered-link {
             width: 100%;
-            max-width: 200px; /* Makes the buttons even narrower */
+            max-width: 180px; /* Makes the buttons narrower */
             padding: 10px 20px; /* Adjust padding for narrower buttons */
             font-size: 1.1rem;
             color: white;
@@ -83,29 +83,4 @@
     </div>
 
     <!-- Polish Content -->
-    <div id="content-pl" class="centered-container" style="display:none;">
-        <div class="button-container">
-            <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po polsku</a>
-            <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po angielsku</a>
-            <a href="https://www.youtube.com/@lukstasto" class="centered-link youtube">YouTube</a>
-            <a href="https://www.twitch.tv/LukStaSto" class="centered-link twitch">Twitch</a>
-            <a href="https://www.instagram.com/lukstasto/" class="centered-link instagram">Instagram</a>
-            <a href="https://www.strava.com/athletes/130372932" class="centered-link strava">Strava</a>
-            <a href="https://www.twitch.tv/LukStaSto" class="centered-link yougov">YouGov reflink</a>
-            <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Amazon</a>
-        </div>
-    </div>
-
-    <script>
-        const userLang = navigator.language || navigator.userLanguage;
-
-        if (userLang.startsWith('pl')) {
-            document.getElementById('content-en').style.display = 'none';
-            document.getElementById('content-pl').style.display = 'block';
-        } else {
-            document.getElementById('content-en').style.display = 'block';
-            document.getElementById('content-pl').style.display = 'none';
-        }
-    </script>
-</body>
-</html>
+    <div id="content-pl" class="
