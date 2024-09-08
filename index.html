@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links</title>
+    <title id="page-title">lukstasto - my links</title> <!-- Default title -->
     <style>
         body, html {
             margin: 0;
@@ -85,6 +85,7 @@
 
     <!-- English Content -->
     <div id="content-en" class="centered-container">
+        <h1>lukstasto - my links</h1> <!-- Card title for English -->
         <div class="button-container">
             <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora" target="_blank">Polish Quora</a>
             <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora" target="_blank">English Quora</a>
@@ -99,6 +100,7 @@
 
     <!-- Polish Content -->
     <div id="content-pl" class="centered-container" style="display:none;">
+        <h1>lukstasto - moje linki</h1> <!-- Card title for Polish -->
         <div class="button-container">
             <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora" target="_blank">Quora po polsku</a>
             <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora" target="_blank">Quora po angielsku</a>
@@ -117,9 +119,11 @@
         if (userLang.startsWith('pl')) {
             document.getElementById('content-en').style.display = 'none';
             document.getElementById('content-pl').style.display = 'block';
+            document.getElementById('page-title').innerText = "lukstasto - moje linki"; // Change the page title to Polish
         } else {
             document.getElementById('content-en').style.display = 'block';
             document.getElementById('content-pl').style.display = 'none';
+            document.getElementById('page-title').innerText = "lukstasto - my links"; // Default to English
         }
     </script>
 </body>
