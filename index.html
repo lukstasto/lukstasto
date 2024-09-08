@@ -41,4 +41,57 @@
         }
 
         /* Button Colors */
-        .youtube 
+        .youtube { background-color: #FF0000; } /* YouTube Red */
+        .quora { background-color: #B92B27; } /* Quora Maroon */
+        .instagram { background-color: #C13584; } /* Instagram Gradient */
+        .twitch { background-color: #6441A5; } /* Twitch Purple */
+        .strava { background-color: #FC4C02; } /* Strava Orange */
+        .amazon { background-color: #FF9900; } /* Amazon Orange */
+        .yougov { background-color: #D3D3D3; color: black; } /* YouGov Grey */
+        
+        .centered-link:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add your image here -->
+    <img src="profilowe.jpg" alt="My Profile Picture" class="profile-picture">
+
+    <!-- English Content -->
+    <div id="content-en" class="centered-container">
+        <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Polish Quora</a>
+        <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">English Quora</a>
+        <a href="https://www.youtube.com/@lukstasto" class="centered-link youtube">YouTube</a>
+        <a href="https://www.twitch.tv/LukStaSto" class="centered-link twitch">Twitch</a>
+        <a href="https://www.instagram.com/lukstasto/" class="centered-link instagram">Instagram</a>
+        <a href="https://www.strava.com/athletes/130372932" class="centered-link strava">Strava</a>
+        <a href="https://www.twitch.tv/LukStaSto" class="centered-link yougov">YouGov reflink</a>
+        <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Amazon</a>
+    </div>
+
+    <!-- Polish Content -->
+    <div id="content-pl" class="centered-container" style="display:none;">
+        <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po polsku</a>
+        <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po angielsku</a>
+        <a href="https://www.youtube.com/@lukstasto" class="centered-link youtube">YouTube</a>
+        <a href="https://www.twitch.tv/LukStaSto" class="centered-link twitch">Twitch</a>
+        <a href="https://www.instagram.com/lukstasto/" class="centered-link instagram">Instagram</a>
+        <a href="https://www.strava.com/athletes/130372932" class="centered-link strava">Strava</a>
+        <a href="https://www.twitch.tv/LukStaSto" class="centered-link yougov">YouGov reflink</a>
+        <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Amazon</a>
+    </div>
+
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.startsWith('pl')) {
+            document.getElementById('content-en').style.display = 'none';
+            document.getElementById('content-pl').style.display = 'block';
+        } else {
+            document.getElementById('content-en').style.display = 'block';
+            document.getElementById('content-pl').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
