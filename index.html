@@ -78,9 +78,34 @@
             <a href="https://www.instagram.com/lukstasto/" class="centered-link instagram">Instagram</a>
             <a href="https://www.strava.com/athletes/130372932" class="centered-link strava">Strava</a>
             <a href="https://www.twitch.tv/LukStaSto" class="centered-link yougov">YouGov reflink</a>
-            <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Amazon</a>
+            <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Wish List</a>
         </div>
     </div>
 
     <!-- Polish Content -->
-    <div id="content-pl" class="
+    <div id="content-pl" class="centered-container" style="display:none;">
+        <div class="button-container">
+            <a href="https://www.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po polsku</a>
+            <a href="https://pl.quora.com/profile/%C5%81ukasz-Stok%C5%82osa-1" class="centered-link quora">Quora po angielsku</a>
+            <a href="https://www.youtube.com/@lukstasto" class="centered-link youtube">YouTube</a>
+            <a href="https://www.twitch.tv/LukStaSto" class="centered-link twitch">Twitch</a>
+            <a href="https://www.instagram.com/lukstasto/" class="centered-link instagram">Instagram</a>
+            <a href="https://www.strava.com/athletes/130372932" class="centered-link strava">Strava</a>
+            <a href="https://www.twitch.tv/LukStaSto" class="centered-link yougov">YouGov reflink</a>
+            <a href="https://www.amazon.co.uk/hz/wishlist/ls/UGGKGONHJ2K9?ref_=wl_share" class="centered-link amazon">Lista życzeń</a>
+        </div>
+    </div>
+
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.startsWith('pl')) {
+            document.getElementById('content-en').style.display = 'none';
+            document.getElementById('content-pl').style.display = 'block';
+        } else {
+            document.getElementById('content-en').style.display = 'block';
+            document.getElementById('content-pl').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
